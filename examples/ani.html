@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <!-- Title -->
+  <title>Semantic UI DEMO</title>
+  <!-- Extern library -->
+  <!-- jQuery 2.1.3 by cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  </script>
+
+  <!-- Semantic UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.4/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.4/semantic.min.js"></script>
+
+  <!-- Custom CSS for DEMO -->
+  <link rel="stylesheet" href="base.css">
+  <script src="base.js"></script>
+</head>
+
+<body>
+  <div class="DEMO">
+    <div class="ui breadcrumb">
+      <a class="section" href="index.html">Index</a>
+      <div class="divider"> / </div>
+      <a class="section" href="header.html">Header</a>
+      <div class="divider"> / </div>
+      <a class="section" href="button.html">Button</a>
+      <div class="divider"> / </div>
+      <a class="section" href="column.html">Column</a>
+      <div class="divider"> / </div>
+      <a class="section" href="table.html">Table</a>
+      <div class="divider"> / </div>
+      <a class="section" href="form.html">Form</a>
+      <div class="divider"> / </div>
+      <a class="section" href="ani.html">Ani</a>
+      <div class="divider"> / </div>
+      <a class="section" href="view.html">View</a>
+      <div class="divider"> / </div>
+    </div>
+    <h1 class="ui center aligned red dividing header">Semantic UI DEMO</h1>
+    <div class="ui center aligned inverted purple segment">
+      <h3 class="ui header">Photo source: <a href="http://semantic-ui.com/modules/transition.html#/definition">semantic ui example</a></h3>
+      <img src="http://semantic-ui.com/images/leaves/1.png" width="350px" alt="" class="ui long leaf image transition visible">
+      <button class="ui button" onclick="$('.long.leaf.image').transition('fade up').transition('fade up');">Fade X2</button>
+      <button class="ui button" onclick="$('.long.leaf.image').transition('horizontal flip in').transition('vertical flip in');">Flip X2</button>
+      <button class="ui button" onclick="$('.long.leaf.image').transition('scale').transition('scale');">Scale X2</button>
+      <button class="ui button" onclick="$('.long.leaf.image').transition('pulse').transition('pulse');">Pulse X2</button>
+      <button class="ui button" onclick="$('.long.leaf.image').transition('toggle');">Toggle X1</button>
+      <button class="ui button" onclick="$('.long.leaf.image').transition({
+      animation : 'jiggle',
+      duration  : 800,
+      interval  : 200
+    });">Jingle X1</button>
+
+      <div class="ui buttons">
+        <button class="ui button" onclick="$('.long.leaf.image').transition('set looping').transition('bounce', '2000ms');">Loop</button>
+        <div class="or"></div>
+        <button class="ui positive button" onclick="$('.long.leaf.image').transition('remove looping');">Un-loop</button>
+      </div>
+    </div>
+    <div class="ui inverted segment">
+      <button class="ui large button" onclick="$('.ui.progress').progress('increment');">RUN</button>
+      <div class="ui inverted progress" data-value="1" data-total="20">
+        <div class="bar">
+          <div class="progress"></div>
+        </div>
+        <div class="label">Uploading Files</div>
+      </div>
+      <div class="ui inverted progress success" data-value="20" data-total="20">
+        <div class="bar">
+          <div class="progress"></div>
+        </div>
+        <div class="label">Success</div>
+      </div>
+      <div class="ui inverted progress warning" data-value="20" data-total="20">
+        <div class="bar">
+          <div class="progress"></div>
+        </div>
+        <div class="label">Warning</div>
+      </div>
+      <div class="ui inverted progress error" data-value="20" data-total="20">
+        <div class="bar">
+          <div class="progress"></div>
+        </div>
+        <div class="label">Error</div>
+      </div>
+    </div>
+
+    <div class="ui inverted yellow segment">
+      <button class="ui large button" onclick="$('.std.test.modal').modal('show');">Show modal</button>
+      <div class="ui modal std test">
+        <i class="close icon"></i>
+        <div class="header">
+          Profile Picture
+        </div>
+        <div class="content">
+          <div class="ui medium image">
+            <img src="https://scontent-sjc.xx.fbcdn.net/hphotos-xfp1/t31.0-8/10854275_888213461199705_6397474643626080601_o.jpg">
+          </div>
+          <div class="description">
+            <div class="ui header">We've auto-chosen a profile image for you.</div>
+            <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+            <p>Is it okay to use this photo?</p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black button">
+            Nope
+          </div>
+          <div class="ui positive right labeled icon button">
+            Yep, that's me
+            <i class="checkmark icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="ui teal buttons">
+        <div class="ui large button">Save</div>
+        <div class="ui floating fft dropdown icon large button">
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item"><i class="edit icon"></i> Edit Post</div>
+            <div class="item"><i class="delete icon"></i> Remove Post</div>
+            <div class="item"><i class="hide icon"></i> Hide Post</div>
+          </div>
+        </div>
+      </div>
+      <h2 class="ui large pink header">Dimmer</h2>
+      <button class="ui button large" onclick="$('.page.dimmer').dimmer('show');">Show Dimmer</button>
+      <div class="ui page dimmer">
+        <div class="content">
+          <div class="center">
+            <h1 class="ui center aligned inverted header">I am page dimmer!</h1>
+            <br> Hello
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+
+</html>
